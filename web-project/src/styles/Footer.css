@@ -1,0 +1,95 @@
+.footerBlock {
+  height: 370px;
+  background-color: #002939;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerBlockContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  color: #e4cfa9;
+  height: 100%;
+}
+.footerContentInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  font-size: 18px;
+  height: 70%;
+}
+.footerContentInfoLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.footerContentInfoRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.footerRightElement {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.footerRightElement:hover {
+  color: aliceblue;
+}
+.footerLeftElement {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.footerLeftElement:hover {
+  color: aliceblue;
+}
+.footerEmailInp {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  color: #e4cfa9;
+}
+.footerEmailInp::placeholder {
+  color: #e4cfa9;
+}
+.footerEmailDiv {
+  display: flex;
+  border: 1px solid #e4cfa9;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerEmail {
+  font-size: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 50%;
+  flex-direction: column;
+  height: 70%;
+}
+.footerLine {
+  background-color: #e4cfa9;
+  width: 1px;
+  height: 80%;
+}
+.footerEmailBtn {
+  padding: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.footerEmailBtn:hover {
+  background-color: #e4cfa9;
+  color: #002939;
+}

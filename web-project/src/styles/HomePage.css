@@ -1,0 +1,241 @@
+.imgDiv {
+  width: 100%;
+  height: 1013px;
+  position: relative;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+.images {
+  width: 100%;
+  opacity: 0.6;
+  margin: 0;
+  padding: 0;
+}
+.welcome {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  top: 300px;
+  height: 300px;
+}
+.welcomeInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #e4cfa9;
+  gap: 142px;
+}
+.privateBtn {
+  border: 2px solid #002939;
+  background-color: #002939;
+  padding: 16px 24px;
+  font-size: 18px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: 0.5s;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.privateBtn:hover {
+  background-color: #e4cfa9;
+  color: #002939;
+}
+.reserveBar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.reserveInp {
+  height: 100%;
+  font-size: 18px;
+  padding: 5px;
+  border-color: transparent;
+  fill-opacity: 0.4;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.reserveInp.search {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 30%;
+  padding-left: 60px;
+  background: url(https://cdn-icons-png.flaticon.com/512/1946/1946488.png)
+    no-repeat scroll 15px 12px;
+  background-size: auto 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.reserveInp.number {
+  background: url(http://cdn.onlinewebfonts.com/svg/img_570334.png) no-repeat
+    scroll 15px 12px;
+  padding-left: 60px;
+  background-size: auto 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 30%;
+}
+.line {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 1px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.innerLine {
+  height: 30px;
+  background-color: grey;
+  width: 1px;
+}
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* color: #002939; */
+}
+
+.block-2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #002939;
+}
+.block-2_number {
+  margin-left: 100px;
+  font-size: 68px;
+  /* font-weight: bold; */
+  color: #002939;
+}
+.block-2_left {
+  /* margin-left: 150px; */
+  color: #002939;
+  display: flex;
+  flex-direction: column;
+  margin-left: 370px;
+  row-gap: 40px;
+}
+.number_category {
+  font-size: 48px;
+  font-weight: bold;
+}
+p {
+  font-size: 24px;
+  line-gap-override: 2px;
+}
+.standart {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.block-2_right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  row-gap: 40px;
+}
+.booking-btn {
+  width: 300px;
+  height: 50px;
+  background-color: #ffff;
+  color: #002939;
+  border: #002939 solid 2px;
+  border-radius: 4px;
+}
+.lux-booking-btn {
+  width: 300px;
+  height: 50px;
+  background-color: #ffff;
+  color: #002939;
+  border: #002939 solid 2px;
+  border-radius: 4px;
+}
+.lux {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.vip {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+@media all and (max-width: 1024px) {
+  .block-2_number {
+    margin-left: 50px;
+    font-size: 48px;
+  }
+  .standart,
+  .lux,
+  .vip {
+    justify-content: center;
+  }
+  .block-2_left {
+    margin-left: 0px;
+  }
+}
+@media all and (max-width: 768px) {
+  #standart_img_right {
+    display: none;
+  }
+  #lux_img_left {
+    display: none;
+  }
+
+  #vip_img_right {
+    display: none;
+  }
+  .standart,
+  .vip {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lux {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .booking-btn {
+    margin-top: 10%;
+    margin-left: -24%;
+  }
+  .lux-booking-btn {
+    margin-top: 10%;
+    margin-left: -14%;
+  }
+}
+@media all and (max-width: 768px) {
+  .block-2_number {
+    font-size: 36px;
+  }
+
+  .number_category {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 320px) {
+  #standart_img_left,
+  #lux_img_right,
+  #vip_img_left {
+    width: 300px;
+    height: 300px;
+  }
+  .block-2_right {
+    margin: 0;
+    align-items: center;
+  }
+  .block-2_left {
+    align-items: center;
+  }
+  .block-2_number {
+    margin-left: 5px;
+  }
+  .booking-btn {
+    margin-left: 0;
+  }
+}
